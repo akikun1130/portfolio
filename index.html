@@ -14,7 +14,7 @@
 
   <body>
     <!-- ここからheader -->
-    <header>
+    <header id="home">
       <!-- ここからNavigation Bar -->
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top p-0">
         <!-- ブランドロゴはないので非表示 -->
@@ -24,11 +24,12 @@
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="nav-bar">
           <ul class="navbar-nav">
-            <li class="nav-item active"><a href="#" class="nav-link p-0">HOME</a></li>
-            <li class="nav-item"><a href="#" class="nav-link p-0">ABOUT</a></li>
-            <li class="nav-item"><a href="#" class="nav-link p-0">WORKS</a></li>
-            <li class="nav-item"><a href="#" class="nav-link p-0">BLOG</a></li>
-            <li class="nav-item"><a href="#" class="nav-link p-0">CONTACT</a></li>
+            <li class="nav-item active"><a href="#home" class="nav-link p-0">HOME</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link p-0">ABOUT</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link p-0">SKILLS</a></li>
+            <li class="nav-item"><a href="#works" class="nav-link p-0">WORKS</a></li>
+            <li class="nav-item"><a href="#blog" class="nav-link p-0">BLOG</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link p-0">CONTACT</a></li>
           </ul>
         </div>
       </nav>
@@ -38,14 +39,25 @@
       <div class="background"></div>
       <!-- ヘッダタイトル、テキスト -->
       <div class="title-text">
-        <h1 class="top-title">Akikun</h1>
+        <h1 class="top-title">Akikun's PORTFOLIO</h1>
         <h2>Creative Web Engineer</h2>
       </div>
     </header>
     <!-- ここまでheader -->
 
+    <!-- ここからabout -->
+    <section class="about" id="about">
+      <div class="about-title content-title"><p>ABOUT</p></div>
+      <div class="about-content">
+        <p>東京にてWeb制作、プログラミングを勉強中で、個人向けを中心に仕事をしています。</p>
+        <p>本業は大手機械メーカで開発エンジニアをしていますが、IT業界への転職およびフリーランスとしての独立を視野に日々努力しています。
+        <p>
+      </div>
+    </section>
+    <!-- ここまでabout -->
+
     <!-- ここからskills -->
-    <section class="container skill p-0">
+    <section class="container skill" id="skills">
       <div class="skill-title content-title"><p>SKILLS</p></div>
       <div class="row">
         <div class="skill-item col-md-4">
@@ -69,25 +81,55 @@
     </section>
     <!-- ここまでskills -->
 
-    <!-- ここからabout -->
-    <section class="about">
-      <div class="about-title content-title"><p>ABOUT</p></div>
-      <div class="about-content">
-        <p>東京にてWeb制作、プログラミングを勉強中で、個人向けを中心に仕事をしています。</p>
-        <p>本業は大手機械メーカで開発エンジニアをしていますが、IT業界への転職およびフリーランスとしての独立を視野に日々努力しています。
-        <p>
-      </div>
-    </section>
-    <!-- ここまでabout -->
-
     <!-- ここからworks -->
-    <section class="work">
+    <section class="work" id="works">
       <div class="work-title content-title"><p>WORKS</p></div>
       <div class="work-content">
         <p>作成中です。</p>
       </div>
     </section>
     <!-- ここまでworks -->
+
+    <!-- ここからblog -->
+    <section class="blog" id="blog">
+      <div class="blog-title content-title"><p>BLOG</p></div>
+      <div class="blog-content">
+        <p>作成中です。</p>
+      </div>
+    </section>
+    <!-- ここまでblog -->
+
+    <!-- ここからcontact form -->
+    <section class="contact-form" id="contact">
+      <div class="contact-form-title content-title"><p>CONTACT FORM</p></div>
+      <div class="contact-form-content">
+        <form>
+          <div class="form-group row">
+            <label class="col-3 col-form-label">お名前</label>
+            <div class="col-9">
+              <input type="text" class="form-control" name="lastname">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-3 col-form-label">メールアドレス</label>
+            <div class="col-9">
+              <input type="text" class="form-control" name="mailaddress">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-3 col-form-label">お問合わせ内容</label>
+            <div class="col-9">
+              <textarea class="form-control" name=""></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="offset-3 col-10">
+                <button type="submit" class="btn btn-primary">送信</button>
+            </div>
+        </form>
+      </div>
+    </section>
+    <!-- ここまでcontact form -->
 
     <!-- ここからfooter -->
     <footer>
@@ -103,8 +145,8 @@
               </a>
             </li> -->
             <!-- <li> -->
-              <a href="https://twitter.com/__akikun___"><i class="fab fa-twitter fa-2x"></i></a>
-              <a href="#"><i class="far fa-envelope fa-2x"></i></a>
+              <a href="https://twitter.com/__akikun___" class="social-icon"><i class="fab fa-twitter fa-2x"></i></a>
+              <a href="#" class="social-icon"><i class="far fa-envelope fa-2x"></i></a>
             <!-- </li>
           </ul> -->
         </div>

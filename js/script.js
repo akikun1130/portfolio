@@ -9,5 +9,20 @@ $ (function() {
   //   $(this).hide();
   // });
   // $('h1').css('color', 'red');
+  $('header a').click(function() {
+    var id = $(this).attr('href');
+    var position = $(id).offset().top;
+
+    $('html, body').animate({'scrollTop': position}, 'slow');
+  });
+
+  $('.social-icon').hover(
+    function() {
+      $(this).animate({'font-size': '20px'}, 300);
+    },
+    function() {
+      $(this).animate({'font-size': '15px'}, 300);
+    }
+  );
 
 });
