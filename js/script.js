@@ -16,13 +16,13 @@ $ (function() {
     $('html, body').animate({'scrollTop': position}, 'slow');
   });
 
-  $('.social-icon').hover(
-    function() {
-      $(this).animate({'font-size': '20px'}, 300);
-    },
-    function() {
-      $(this).animate({'font-size': '15px'}, 300);
-    }
-  );
+  // $('.social-icon').hover(
+  //   function() {
+  //     $(this).animate({'font-size': '20px'}, 300);
+  //   },
+  //   function() {
+  //     $(this).animate({'font-size': '15px'}, 300);
+  //   }
+  // );
 
 });

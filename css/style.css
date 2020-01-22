@@ -1,10 +1,20 @@
 body, h1, h2, h3, h4, h5, h6, p, a {
   /* color: #333; */
-  font-family: "メイリオ", sans-serif;
-  box-sizing: border-box;
+  font-family: Century Gothic, sans-serif;
   text-align: center;
-  padding: 0;
+}
+
+* {
   margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 header {
@@ -68,13 +78,23 @@ header a {
 .about {
   padding: 100px;
   background-color: #F5F5F5;
-  height: 800px;
+  height: 960px;
+}
+
+.profile-image {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.profile-image img {
+  border-radius: 150px;
 }
 
 .skill {
   padding: 100px;
   background-color: #FFFFFF;
-  height: 800px;
+  height: 960px;
 }
 
 .skill-item {
@@ -110,27 +130,24 @@ header a {
 .work {
   padding: 100px 0;
   background-color: #F5F5F5;
-  height: 800px;
+  height: 960px;
 }
 
 .blog {
   padding: 100px 0;
-  background-color: #FFFFFF;;
-  height: 800px;
+  background-color: #FFFFFF;
+  height: 960px;
 }
 
 .contact-form {
   padding: 100px 0;
   background-color: #F5F5F5;
-  height: 800px;
+  height: 960px;
 }
 
 .contact-form-content {
   margin: 0 auto;
-  width: 30%;
-}
-
-footer {
+  width: 500px;
 }
 
 footer a {
@@ -169,9 +186,10 @@ footer li {
   margin-top: 20px;
 }
 
-.self-intro {
+/*
+ .self-intro {
   display: inline-block;
-  /* font-size: 20px; */
+  font-size: 20px;
   margin-top: 50px;
   text-align: center;
 }
@@ -221,3 +239,4 @@ footer li {
   margin: 100px auto 0 auto;
   text-align: center;
 }
+*/
