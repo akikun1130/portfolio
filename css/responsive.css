@@ -9,20 +9,21 @@
     background-position: 50% 0;
   }
 
-  header ul {
-    height: 40px;
+  .header-nav-bar {
+    display: block;
   }
 
-  header li {
+  .nav-list-pc {
     display: none;
   }
 
-  .header-nav-bar {
+  .nav-list-smartphone {
     display: block;
   }
 
   .about {
     padding: 100px 10px;
+    height: 700px;
   }
 
   .profile-image {
@@ -30,7 +31,19 @@
   }
 
   .skill {
-    height: 1200px;
+    height: 1100px;
+  }
+
+  .work {
+    height: 700px;
+  }
+
+  .blog {
+    height: 700px;
+  }
+
+  .contact-form {
+    height: 700px;
   }
 
   .contact-form-content {

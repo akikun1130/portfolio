@@ -40,12 +40,8 @@ header nav {
   background-color: transparent;
   color: #FFFFFF;
   border: none;
-  top: 2px;
-  left: calc(100% - 40px);
-}
-
-.header-nav-bar span {
-  margin-left: 500px;
+  top: 12px;
+  left: calc(100% - 50px);
 }
 
 header h1 {
@@ -60,6 +56,10 @@ header h2 {
   color: #FFFFFF;
 }
 
+.nav-list-smartphone {
+  display: none;
+}
+
 header ul {
   height: 60px;
   background-color: #343A40;
@@ -72,6 +72,20 @@ header li {
   width: 150px;
 }
 
+header .nav-list-pc li {
+  width: 150px;
+}
+
+header .nav-list-smartphone ul {
+  padding-top: 60px;
+}
+
+header .nav-list-smartphone li {
+  display: none;
+  width: 100%;
+  padding-right: 15px;
+}
+
 header a:hover {
   background-color: #808080;
   transition: all 0.2s;
@@ -80,11 +94,15 @@ header a:hover {
 }
 
 header a {
-  display:inline-block;
   color: #FFFFFF;
   font-size: 18px;
   width: 100%;
   line-height: 60px;
+}
+
+header .nav-list-smartphone a {
+  line-height: 30px;
+  text-align: right;
 }
 
 .background {
