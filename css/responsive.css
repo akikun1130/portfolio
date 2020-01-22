@@ -1,25 +1,39 @@
-@media(max-width: 1000px) {
-  header li {
-    width: 15%;
+@media(max-width: 768px) {
+
+  header {
+    height: 580px;
+  }
+
+  .background {
+    height: 580px;
+    background-position: 50% 0;
   }
 
   header ul {
-    margin-right: 0;
-  }
-}
-
-@media(max-width: 670px) {
-  header ul {
-    padding-right: 0;
-    text-align: right;
+    height: 40px;
   }
 
   header li {
     display: none;
   }
 
-  .menu-icon {
+  .header-nav-bar {
     display: block;
-    float: right;
+  }
+
+  .about {
+    padding: 100px 10px;
+  }
+
+  .profile-image {
+    padding-top: 0;
+  }
+
+  .skill {
+    height: 1200px;
+  }
+
+  .contact-form-content {
+    width: 100%;
   }
 }
